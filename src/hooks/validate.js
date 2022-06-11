@@ -11,6 +11,10 @@ const useValidate = (validateValue) => {
   // Declare hasError const that evalutes is not valueIsValid and isTouched
   const hasError = !valueIsValid && isTouched;
   // Declare valueChangeHandler event function and setEnteredValue to event target value
+
+  const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
+  const enteredEmailIsValid = regEx.test(enteredValue);
+
   const valueChangeHandler = (e) => {
     setEnteredValue(e.target.value);
   };
@@ -34,6 +38,7 @@ const useValidate = (validateValue) => {
     inputBlurHandler,
     reset,
     errorMessage,
+    enteredEmailIsValid,
   };
 };
 

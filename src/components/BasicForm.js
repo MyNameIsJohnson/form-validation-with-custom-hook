@@ -9,27 +9,44 @@ const BasicForm = (props) => {
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
     reset: nameReset,
-    errorMessage: message = "Name must be added",
+    errorMessage: nameErrorMessage = "Name must be added",
   } = useValidate((value) => value.trim() !== "");
+
+  const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
+
+  const {
+    value: enteredEmail,
+    hasError: emailHasError,
+    isValid: emailIsValid,
+    valueChangeHandler: emailChangeHandler,
+    inputBlurHandler: emailBlurHandler,
+    reset: emailReset,
+    errorMessage: emailErrorMessage = "Email must be valid",
+  } = useValidate((value) => regEx.test(value));
+
   // Declare a variable for formIsValid to a boolean
   let formIsValid = false;
   // If the entered value being checked is true, set formIsValid to true
-  if (enteredName) {
+  if (enteredName && enteredEmail) {
     formIsValid = true;
   }
   // Declare formSubmissionHandler with event preventDefault.
   const formSubmissionHandler = (e) => {
     e.preventDefault();
-    console.log(enteredName);
     // If entered value is not true, end function with a return
-    if (!nameIsValid) {
+    if (!nameIsValid && !emailIsValid) {
       return;
     }
     // reset value input by calling reset function from validate.js
     nameReset("");
+    emailReset("");
   };
   // Conditionally render error message and add style to input
   const nameInputClasses = nameHasError
+    ? "form-control invalid"
+    : "form-control";
+
+  const emailInputClasses = emailHasError
     ? "form-control invalid"
     : "form-control";
 
@@ -45,16 +62,23 @@ const BasicForm = (props) => {
             onBlur={nameBlurHandler}
             onChange={nameChangeHandler}
           />
-          {nameHasError && <p className="error-text">{message}</p>}
+          {nameHasError && <p className="error-text">{nameErrorMessage}</p>}
         </div>
         <div className="form-control">
           <label htmlFor="name">Last Name</label>
           <input type="text" id="name" />
         </div>
       </div>
-      <div className="form-control">
+      <div className={emailInputClasses}>
         <label htmlFor="name">E-Mail Address</label>
-        <input type="text" id="name" />
+        <input
+          type="text"
+          id="name"
+          value={enteredEmail}
+          onBlur={emailBlurHandler}
+          onChange={emailChangeHandler}
+        />
+        {emailHasError && <p className="error-text">{emailErrorMessage}</p>}
       </div>
       <div className="form-actions">
         <button disabled={!formIsValid}>Submit</button>
