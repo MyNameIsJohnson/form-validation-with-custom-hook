@@ -20,7 +20,7 @@ This is a form validation project built in React.js that handles form submit and
 
 - Develop a form validation using a custom hook
 
-### Screenshot
+### Preview
 
 ![Capture](https://media.giphy.com/media/pEYlktVqvY4Y7hASnc/giphy.gif)
 
