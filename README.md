@@ -27,7 +27,7 @@ This is a form validation project built in React.js that handles form submit and
 ### Links
 
 - Solution URL: [https://github.com/MyNameIsJohnson/form-validation-with-custom-hook](https://github.com/MyNameIsJohnson/form-validation-with-custom-hook)
-- Live Site URL: [https://form-validation-with-custom-hook.githubio](https://multiple-choice-game.netlify.app/)
+- Live Site URL: [https://form-validation-with-custom-hook.githubio](https://mynameisjohnson.github.io/form-validation-with-custom-hook/)
 
 ### Built with
 
