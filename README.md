@@ -22,7 +22,7 @@ This is a form validation project built in React.js that handles form submit and
 
 ### Screenshot
 
-![Capture](./video.mp4.mp4)
+![Capture](https://media.giphy.com/media/pEYlktVqvY4Y7hASnc/giphy.gif)
 
 ### Links
 
@@ -42,7 +42,7 @@ This is a form validation project built in React.js that handles form submit and
 ### Useful resources
 
 - [React](https://reactjs.org/)
-- [Custom Hooks](https://reactjs.org/docs/hooks-custom.html
+- [Custom Hooks](https://reactjs.org/docs/hooks-custom.html)
 
 ## Author
 
