@@ -21,24 +21,24 @@ This is a form validation project built in React.js that handles form submit and
 - Develop a form validation using a custom hook
 
 ### Screenshot
-![Capture](Uploading video.mp4…)
+
+![Capture](./video.mp4.mp4)
 
 ### Links
 
 - Solution URL: [https://github.com/MyNameIsJohnson/form-validation-with-custom-hook](https://github.com/MyNameIsJohnson/form-validation-with-custom-hook)
 - Live Site URL: [https://form-validation-with-custom-hook.githubio](https://multiple-choice-game.netlify.app/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
-- Custom CSS 
+- Custom CSS
 - [React](https://reactjs.org/)
 
-
 ### What I learned
+
 - In this project, I learned how to create a custom hook to that uses a function to validate the entered values. I learned about object destructuring and used it here to pass to the form as constant variable. The variables are used to validate what the user enters based on the conditions set in my function.
+
 ### Useful resources
 
 - [React](https://reactjs.org/)
