@@ -22,7 +22,7 @@ This is a form validation project built in React.js that handles form submit and
 
 ### Preview
 
-![Capture]([https://media.giphy.com/media/pEYlktVqvY4Y7hASnc/giphy.gif](https://giphy.com/gifs/wUTfEkWSs8XmpcKHph))
+![Capture]([[https://media.giphy.com/media/pEYlktVqvY4Y7hASnc/giphy.gif](https://giphy.com/gifs/wUTfEkWSs8XmpcKHph](https://media.giphy.com/media/wUTfEkWSs8XmpcKHph/giphy.gif)]))
 
 ### Links
 
