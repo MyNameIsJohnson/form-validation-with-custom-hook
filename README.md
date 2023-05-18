@@ -21,11 +21,9 @@ This is a form validation project built in React.js that handles form submit and
 - Develop a form validation using a custom hook
 
 ### Preview
-
-![Capture]([[https://media.giphy.com/media/pEYlktVqvY4Y7hASnc/giphy.gif](https://giphy.com/gifs/wUTfEkWSs8XmpcKHph](https://media.giphy.com/media/wUTfEkWSs8XmpcKHph/giphy.gif)]))
+![Movies   TV 5_18_2023 1_00_04 PM](https://github.com/MyNameIsJohnson/form-validation-with-custom-hook/assets/38548029/3d407385-e5a1-4e42-86c1-9d2167ebd3fc)
 
 ### Links
-
 - Solution URL: [https://github.com/MyNameIsJohnson/form-validation-with-custom-hook](https://github.com/MyNameIsJohnson/form-validation-with-custom-hook)
 - Live Site URL: [https://form-validation-with-custom-hook.githubio](https://mynameisjohnson.github.io/form-validation-with-custom-hook/)
 
